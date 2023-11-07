@@ -22,7 +22,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     
     
     //VARIABLES AUXILIARES
-    private var checkFlag = false //recordar el usuario y contraseña
+    private var checkFlag = false //recordar el usuario/contraseña
     
     
     override func viewDidLoad() {
@@ -30,7 +30,6 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         
         nameField.delegate = self
         passwordField.delegate = self
-        
         
         CheckAndAdd()
         incorrectLabel.isHidden = true
