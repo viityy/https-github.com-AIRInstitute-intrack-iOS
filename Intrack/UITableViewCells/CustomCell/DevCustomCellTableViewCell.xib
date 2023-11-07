@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22154" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22130"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="88" id="KGk-i7-Jjw" customClass="DevCustomCellTableViewCell" customModule="Intrack" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="490" height="88"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="490" height="88"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dispositivo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xPh-7C-Vku">
+                        <rect key="frame" x="20" y="32" width="200" height="24"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="200" id="nOT-bE-hFg"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No disponible" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EQN-Ff-isW">
+                        <rect key="frame" x="341" y="32" width="149" height="24"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="149" id="4XM-0i-Mas"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                        <color key="textColor" systemColor="systemGrayColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="wTE-d8-KR2">
+                        <rect key="frame" x="341" y="-25" width="120" height="138"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="120" id="h7k-pb-asq"/>
+                        </constraints>
+                    </activityIndicatorView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="EQN-Ff-isW" secondAttribute="trailing" id="3Gs-qV-azJ"/>
+                    <constraint firstItem="EQN-Ff-isW" firstAttribute="baseline" secondItem="xPh-7C-Vku" secondAttribute="firstBaseline" id="H0C-tR-Ir4"/>
+                    <constraint firstItem="xPh-7C-Vku" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="ICi-zX-BIr"/>
+                    <constraint firstItem="xPh-7C-Vku" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="RLn-Nn-YaG"/>
+                    <constraint firstItem="EQN-Ff-isW" firstAttribute="centerY" secondItem="wTE-d8-KR2" secondAttribute="centerY" id="d2u-rr-B7c"/>
+                    <constraint firstItem="wTE-d8-KR2" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="-36" id="f9l-lF-Z0I"/>
+                    <constraint firstItem="EQN-Ff-isW" firstAttribute="leading" secondItem="wTE-d8-KR2" secondAttribute="leading" id="hij-HG-imJ"/>
+                    <constraint firstItem="EQN-Ff-isW" firstAttribute="firstBaseline" secondItem="xPh-7C-Vku" secondAttribute="baseline" id="lsE-9u-w1K"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="activityIndicator" destination="wTE-d8-KR2" id="hnP-Pw-l3x"/>
+                <outlet property="connectedLabel" destination="EQN-Ff-isW" id="cIx-xN-p7I"/>
+                <outlet property="deviceLabel" destination="xPh-7C-Vku" id="JMA-cf-JKq"/>
+            </connections>
+            <point key="canvasLocation" x="-134.35114503816794" y="40.140845070422536"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemGrayColor">
+            <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
